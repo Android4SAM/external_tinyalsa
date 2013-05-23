@@ -691,7 +691,7 @@ struct pcm *pcm_open(unsigned int card, unsigned int device,
 
 
     memset(&sparams, 0, sizeof(sparams));
-    sparams.tstamp_mode = SNDRV_PCM_TSTAMP_ENABLE;
+    sparams.tstamp_mode = SNDRV_PCM_TSTAMP_NONE;
     sparams.period_step = 1;
 
     if (!config->start_threshold) {
